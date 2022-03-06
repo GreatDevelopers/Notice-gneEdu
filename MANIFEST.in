@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include noticeboard *.css
+recursive-include noticeboard *.csv
+recursive-include noticeboard *.html
+recursive-include noticeboard *.ico
+recursive-include noticeboard *.js
+recursive-include noticeboard *.json
+recursive-include noticeboard *.md
+recursive-include noticeboard *.png
+recursive-include noticeboard *.py
+recursive-include noticeboard *.svg
+recursive-include noticeboard *.txt
+recursive-exclude noticeboard *.pyc
