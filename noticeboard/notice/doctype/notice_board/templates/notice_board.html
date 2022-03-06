@@ -1,0 +1,27 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h1>{{ title }}</h1>
+<!-- {{ date }} -->
+<div>{{ frappe.format_date('') }}</div>
+<!--{{ attachment }}-->
+<br>
+{{ content }}
+<br>
+
+<a href="{{attachment}}">Attachment</a>
+<br>
+<br>
+<span>The Notice is Saved By : <b>{{username}}</b></span>
+<br>
+<img src="{{signature}}" width="200" height="200" align="right">
+<br>
+
+<!-- {% set timezone = frappe.db.get_single_value('System Settings', 'time_zone') %} -->
+<!-- {{ timezone }} -->
+<br><br>
+<br><br>
+<p align="right">The Notice is Viewed By : <b>{{ frappe.get_fullname() }}</b></p>
+{% endblock %}
+
+<!-- this is a sample default web page template -->
